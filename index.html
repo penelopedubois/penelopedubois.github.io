@@ -1,256 +1,17 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>itinerae: lilac</title>
-
-    <style type="text/css">
-      body {
-        background: #000;
-        background-image: url(./assets/images/stars-loop.png);
-        font-family: calibri, Verdana, Arial, Helvetica, sans-serif;
-        font-size: 16px;
-        color: #000;
-        letter-spacing: 1px;
-      }
-
-      #layout {
-        margin: 70px auto;
-        width: 1200px;
-      }
-
-      #navigationbar {
-        width: 1200px;
-        float: left;
-        margin: 0 auto;
-      }
-
-      #navigation {
-        height: 20px;
-        line-height: 20px;
-        background: transparent;
-        border-radius: 10px;
-        border: 0px solid #fff;
-        margin: 5px;
-      }
-
-      #banner {
-        width: 1200px;
-        float: left;
-        margin: 0 auto;
-      }
-
-      #bannertextorimage {
-        height: 100px;
-        line-height: 100px;
-        background: transparent;
-        border-radius: 10px;
-        border: 0px solid #fff;
-        margin: 5px;
-      }
-
-      .text {
-        font: 40px monospace;
-        border-bottom: 4px solid #fff;
-        text-align: center;
-        color: #fff;
-        letter-spacing: 4px;
-        text-transform: uppercase;
-      }
-
-      .subtext {
-        font: italic 20px monospace;
-        border-bottom: 4px;
-        text-align: center;
-        color: #fff;
-        letter-spacing: 4px;
-        text-transform: uppercase;
-      }
-
-      .center {
-        text-align: center;
-      }
-
-      .image {
-        max-width:100%;
-        max-height:100%;
-        object-fit: contain;
-      }
-
-      #content {
-        width: 600px;
-        float: left;
-        margin: 0 auto;
-      }
-
-      #contentbox {
-        background: #fff;
-        border-radius: 10px;
-        border: 0px solid #fff;
-        margin: 5px;
-        padding: 10px;
-        margin-bottom: 10px;
-      }
-
-      #left {
-        width: 300px;
-        float: left;
-        margin: 0 auto;
-      }
-
-      #leftbox {
-        padding: 10px;
-        background: #fff;
-        border-radius: 10px;
-        border: 0px solid #330066;
-        margin: 5px;
-        margin-bottom: 10px;
-      }
-
-      #right {
-        width: 300px;
-        float: left;
-        margin: 0 auto;
-      }
-
-      #rightbox {
-        padding: 10px;
-        border-radius: 10px;
-        background: #fff;
-        border-radius: 10px;
-        border: 0px solid #330066;
-        margin: 5px;
-        margin-bottom: 10px;
-      }
-
-      #footer {
-        width: 800px;
-        float: left;
-        margin: 0 auto;
-        clear: both;
-      }
-
-      #footerbox {
-        height: 20px;
-        background: transparent;
-        border-radius: 0px;
-        border-top: 0px solid #330066;
-        margin: 5px;
-        padding-top: 5px;
-        text-align: center;
-      }
-
-      a:link {
-        color: #000;
-        text-decoration: none;
-      }
-      a:visited {
-        color: #222;
-        text-decoration: none;
-      }
-      a:hover {
-        color: #666;
-        text-decoration: none;
-      }
-
-      ::-webkit-scrollbar-thumb {
-        background-color: #fff;
-        border-radius: 0px;
-        border: 1px solid #fff;
-      }
-      ::-webkit-scrollbar {
-        width: 7px;
-        height: 4px;
-        background: #fff;
-      }
-
-      .small-title {
-        color: #fff;
-        text-transform: uppercase;
-        font: 20px arial;
-        line-height: 24px;
-        background: #330066;
-        border-radius: 10px;
-        margin-bottom: 5px;
-        padding-left: 10px;
-      }
-      .big-title {
-        color: #fff;
-        text-transform: uppercase;
-        font: 20px arial;
-        line-height: 24px;
-        background: #330066;
-        border-radius: 10px;
-        margin-bottom: 5px;
-        padding-left: 10px;
-      }
-
-      #Table {
-        border-collapse: collapse;
-        padding: 5px;
-        width: 380px;
-      }
-
-      #Table th {
-        padding: 0px;
-        background: #330066;
-        color: #fff;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-        width: 50%;
-        text-align: left;
-        font: 12px arial;
-        line-height: 12px;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-      }
-
-      #Table td {
-        text-align: center;
-        padding: 5px;
-        background: #fff;
-        color: #000;
-        width: 50%;
-        text-align: left;
-      }
-
-      #navigation a:link,
-      a:visited,
-      a:active {
-        font: 12px monospace;
-        text-transform: uppercase;
-        line-height: 20px;
-        padding: 4px;
-        letter-spacing: 2px;
-        margin-right: 10px;
-        background: #fff;
-        border-radius: 10px;
-      }
-
-      #navigation a:hover {
-        background: #fff;
-        text-transform: uppercase;
-        line-height: 20px;
-        padding: 4px;
-        letter-spacing: 2px;
-        margin-right: 10px;
-        color: #330066;
-      }
-
-      textarea {
-        font-size: 10px;
-        letter-spacing: 1px;
-        color: #fff;
-      }
-    </style>
+    <title>Penelope du Bois</title>
+    <link href="./style.css" rel="stylesheet" />
+    <link hidden="./assets/favicon.ico" rel="icon" />
+    <link hidden="./assets/favicon.ico" rel="shortcut icon" />
   </head>
 
   <body>
     <div id="layout">
       <div id="banner">
         <div id="bannertextorimage">
-          <div class="text">
-            Penelope du Bois
-          </div>
+          <div class="text">Penelope du Bois</div>
           <div class="subtext">
             Software Developer - Astrophysicist - Factorio Enthusiast
           </div>
@@ -274,60 +35,100 @@
       <div id="left">
         <div id="leftbox">
           <div class="small-title">Languages</div>
-            <ul>
-                <li> C++ </li>
-                <li> C# </li>
-                <li> English </li>
-                <li> JavaScript :(</li>
-                <li> Python </li>
-                <li> Toki Pona </li>
-                <li> LaTeX </li>
-                <li> HTML/CSS </li>
-            </ul>
+          In order of fluency
+          <ul>
+            <li>C++</li>
+            <li>English</li>
+            <li>C#</li>
+            <li>Regex (Write)</li>
+            <li>LaTeX</li>
+            <li>JavaScript :(</li>
+            <li>Python</li>
+            <li>Perl (Read/Write)</li>
+            <li>Toki Pona</li>
+            <li>Regex (Read)</li>
+            <li>HTML/CSS</li>
+            <li>Français (I have a GCSE)</li>
+          </ul>
+        </div>
+
+        <div id="leftbox">
+          <div class="small-title">Currently Playing</div>
+          🛠️<b>Nothing</b> - But I'm eyeing up that new Zachtronics game
+          <br />
+          📈<b>Graph</b> - Looks funky
+          <img src="./assets/images/diffusion.png" />
         </div>
       </div>
 
       <div id="content">
         <div id="contentbox">
           <div class="big-title">About Me</div>
+          <b>Toki!</b>
 
-          I am a full-time software developer with a background in astrophysics.
+          <br />
+          <br />
 
-        </br>
+          I'm Penny, a full-time software developer with a background in
+          astrophysics. I made this website so I can show off some of the cool
+          stuff I've done.
 
-          I'm currently working in England where I graduated with a Masters Degree in physics with astrophysics.
+          <br />
+          <br />
 
-          </br>
-          </br>
+          I'm currently working in England as a software engineer, but I also
+          work on my own projects in my free time. I'll get around to finishing
+          that video game one day...
 
-          TODO CONTENT
+          <br />
+          <br />
 
-        </br>
-        </br>
+          I also previously graduated with a First Class Master's Degree in
+          physics with astrophysics from Northumbria University. My masters and
+          bachelors disserations can be viewed at the right hand side.
 
+          <br />
+          <br />
 
-        <div class="center">
-            "No. This is somewhere to be. This is all you have, but it's still something. Streets and sodium lights. The sky, the world. You're still alive."
-            </br>Volition, Disco Elysium
-        </div>
+          Here's an N-Body sim using RKF45 that I wrote with Raylib for graphics
+          <br />
+          <br />
+          <img src="./assets/images/nbody.gif" />
+          <br />
+          <br />
 
+          <div class="center">
+            "No. This is somewhere to be. This is all you have, but it's still
+            something. Streets and sodium lights. The sky, the world. You're
+            still alive."
+            <br /><b>Volition, Disco Elysium</b>
+          </div>
         </div>
       </div>
 
       <div id="right">
         <div id="rightbox">
-          <div class="small-title">WOAW</div>
+          <div class="small-title">Uni Stuff</div>
           <div class="image">
-            <img src=".\assets\images\dailyplots2.gif" style='height: 100%; width: 100%;'/></img>
+            Examining Hemispheric Asymmetries in Field-Aligned Currents at Earth
+            Using Ground-Based Data
+            <a href="./assets/pdf/mastersDissertation.pdf"><b>(link)</b></a>
+            <img src="./assets/images/dailyplots2.gif" />
           </div>
-        </div>
-      </div>
-
-      <div id="footer">
-        <div id="footerbox">
-          Layout made by
-          <a href="http://itinerae.neocities.org" target="_blank">Itinerae.</a>
           <br />
+          <br />
+          Examining Hemispheric Asymmetries in Field-Aligned Currents at Earth
+          Using Ground-Based Data
+          <a href="./assets/pdf/bachelorsDissertation.pdf"><b>(link)</b></a>
+          <div class="image">
+            <img src="./assets/images/hoggAccretionTimes.png" />
+          </div>
+          <br />
+          <br />
+          <i
+            >Possibly more to come, there may or may not be a paper in the
+            works...</i
+          >
         </div>
       </div>
     </div>
