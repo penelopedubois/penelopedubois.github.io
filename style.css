@@ -48,16 +48,21 @@ body {
   text-align: center;
   color: #fff;
   letter-spacing: 4px;
-  text-transform: uppercase;
 }
 
 .subtext {
   font: italic 24px monospace;
+  text-align: center;
+  color: #fff;
+  letter-spacing: 4px;
+}
+
+.footertext {
+  font: italic 16px monospace;
   border-bottom: 4px;
   text-align: center;
   color: #fff;
   letter-spacing: 4px;
-  text-transform: uppercase;
 }
 
 .center {
@@ -122,7 +127,7 @@ img {
 }
 
 #footer {
-  width: 800px;
+  width: 1200px;
   float: left;
   margin: 0 auto;
   clear: both;
@@ -164,9 +169,8 @@ a:hover {
 
 .small-title {
   color: #fff;
-  text-transform: uppercase;
-  font: 20px arial;
-  line-height: 24px;
+  font: 20px monospace;
+  line-height: 28px;
   background: #330066;
   border-radius: 10px;
   margin-bottom: 5px;
@@ -174,9 +178,8 @@ a:hover {
 }
 .big-title {
   color: #fff;
-  text-transform: uppercase;
-  font: 20px arial;
-  line-height: 24px;
+  font: 20px monospace;
+  line-height: 28px;
   background: #330066;
   border-radius: 10px;
   margin-bottom: 5px;
