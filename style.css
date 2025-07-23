@@ -57,14 +57,6 @@ body {
   letter-spacing: 4px;
 }
 
-.footertext {
-  font: italic 16px monospace;
-  border-bottom: 4px;
-  text-align: center;
-  color: #fff;
-  letter-spacing: 4px;
-}
-
 .center {
   text-align: center;
 }
@@ -141,6 +133,14 @@ img {
   margin: 5px;
   padding-top: 5px;
   text-align: center;
+}
+
+.footertext {
+  font: italic 16px monospace;
+  border-bottom: 4px;
+  text-align: center;
+  color: #fff;
+  letter-spacing: 4px;
 }
 
 a:link {
